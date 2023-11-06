@@ -115,6 +115,74 @@ module user_proj_example #(
         .count(count)
     );
 
+    airi5c_top_asic DUT(
+        .clk(CLK),
+        .nreset(nRESET),
+        .ext_interrupt(EXT_INT),
+    
+        .tdi(tdi),
+        .tdo(tdo),
+        .tms(tms),
+        .tck(tck),
+    
+        .testmode(testmode),
+        .sdi(sdi),
+        .sdo(sdo),
+        .sen(sen),
+
+        .imem_haddr(imem_haddr),
+        .imem_hwrite(imem_hwrite),
+        .imem_hsize(imem_hsize),
+        .imem_hburst(imem_hburst),
+        .imem_hmastlock(imem_hmastlock),
+        .imem_hprot(imem_hprot),
+        .imem_htrans(imem_htrans),
+        .imem_hwdata(imem_hwdata),
+        .imem_hrdata(imem_hrdata),
+        .imem_hready(imem_hready),
+        .imem_hresp(imem_hresp),
+
+        .dmem_haddr(dmem_haddr),
+        .dmem_hwrite(dmem_hwrite),
+        .dmem_hsize(dmem_hsize),
+        .dmem_hburst(dmem_hburst),
+        .dmem_hmastlock(dmem_hmastlock),
+        .dmem_hprot(dmem_hprot),
+        .dmem_htrans(dmem_htrans),
+        .dmem_hwdata(dmem_hwdata),
+        .dmem_hrdata(dmem_hrdata),
+        .dmem_hready(dmem_hready),
+        .dmem_hresp(dmem_hresp),
+
+      // GPIO 0
+        .gpio0_out(gpio0_out),
+        .gpio0_in(gpio0_in),
+        .gpio0_oe(gpio0_oe),
+
+      // UART 0
+        .uart0_tx(uart0_tx),
+        .uart0_rx(uart0_rx),
+
+      // SPI 0
+        .spi0_mosi_out(spi0_mosi_out),
+        .spi0_mosi_in(spi0_mosi_in),
+        .spi0_mosi_oe(spi0_mosi_oe),
+
+        .spi0_miso_out(spi0_miso_out),
+        .spi0_miso_in(spi0_miso_in),
+        .spi0_miso_oe(spi0_miso_oe),
+
+        .spi0_sclk_out(spi0_sclk_out),
+        .spi0_sclk_in(spi0_sclk_in),
+        .spi0_sclk_oe(spi0_sclk_oe),
+
+        .spi0_ss_out(spi0_ss_out),
+        .spi0_ss_in(spi0_ss_in),
+        .spi0_ss_oe(spi0_ss_oe),
+
+        .debug_out(debug_out)
+    );
+
 endmodule
 
 module counter #(
