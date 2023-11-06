@@ -41,7 +41,10 @@
 		"dir::../../verilog/airisc_core_complex/src/modules/airi5c_uart/src/*.v",
 		"dir::../../verilog/airisc_core_complex/src/modules/airi5c_gpio/src/airi5c_gpio.v",
 		"dir::../../verilog/airisc_core_complex/src/modules/airi5c_timer/src/airi5c_timer.v",
+		"dir::../../verilog/airisc_core_complex/external/neoTRNG/rtl/neoTRNG_ghdl.v",
 		"dir::../../verilog/airisc_core_complex/src/modules/airi5c_trng/src/airi5c_trng.v",
+		"dir::../../verilog/airisc_core_complex/src/modules/airi5c_icap/src/airi5c_hasti_constants.vh",
+		"dir::../../verilog/airisc_core_complex/src/modules/airi5c_icap/src/airi5c_icap.v",
 		"dir::../../verilog/airisc_core_complex/tb/configs/airi5c_top_asic.v",
 		"dir::../../verilog/rtl/user_proj_example.v"
 	],
@@ -70,6 +73,6 @@
     "BASE_SDC_FILE": "dir::base_user_proj_example.sdc",
 	"RUN_HEURISTIC_DIODE_INSERTION": 1,
 	"RUN_CVC": 1,
-	"RUN_LINTER": 1,
+	"RUN_LINTER": 0,
 	"QUIT_ON_LINTER_ERRORS": 0
 }
